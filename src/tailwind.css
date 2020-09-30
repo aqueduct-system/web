@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+
+.app {
+    @apply min-h-screen flex flex-col bg-gray-100;
+}
+
+.content-width {
+    @apply w-full max-w-5xl mx-auto;
+}
+
+.container {
+    @apply content-width;
+}
+
+.container:before {
+    @apply bg-gray-800 block absolute top-0 left-0 h-64 w-full z-0;
+    content: "";
+}
+
+.content {
+    @apply px-8 pt-4 pb-16 mb-16 relative z-10 rounded-md shadow-lg bg-white;
+    min-height: 16rem;
+}
+
+@tailwind utilities;
