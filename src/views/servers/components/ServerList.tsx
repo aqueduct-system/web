@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from 'react';
+import { Aqueduct } from '@aqueduct-system/types';
 
 import ServerCard from './ServerCard';
-import { Aqueduct } from 'packages/types/dist';
 
 type ServerListProps = {
     servers: Aqueduct.Server[];
